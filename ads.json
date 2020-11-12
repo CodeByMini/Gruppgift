@@ -1,0 +1,103 @@
+{
+    "1":{
+        "name":"Hederlige Harry",
+        "ads":{
+            "ad1":{
+                "body":"Köp bil hos Harry",
+                "effect": 1,
+                "time": 0,
+                "timestart" : 0,
+                "timeend" : 0
+            },
+            "ad2":{
+                "body":"En god bilaffär (för Harry!)",
+                "effect": 0,
+                "time": 0,
+                "timestart" : 0,
+                "timeend" : 0
+            },
+            "ad3":{
+                "body":"Hederlige Harrys Bilar",
+                "effect": 2,
+                "time": 0,
+                "timestart" : 0,
+                "timeend" : 0
+            }
+        },
+        "tokens": 5000
+    },
+    "2":{
+        "name":"Farmor Ankas Pajer AB",
+        "ads":{
+            "ad1":{
+                "body":"Köp paj hos Farmor Anka",
+                "effect": 1,
+                "time": 0,
+                "timestart" : 0,
+                "timeend" : 0
+            },
+            "ad2":{
+                "body":"Skynda innan Mårten ätit alla pajer",
+                "effect": 0,
+                "time": 0,
+                "timestart" : 0,
+                "timeend" : 0
+            }
+        },
+        "tokens": 3000
+    },
+    "3":{
+        "name":"Svarte Petters Svartbyggen",
+        "ads":{
+            "ad1":{
+                "body":"Låt Petter bygga åt dig",
+                "effect": 1,
+                "time": 1,
+                "timestart" : 2,
+                "timeend" : 0
+            },
+            "ad2":{
+                "body":"Bygga svart? Ring Petter",
+                "effect": 0,
+                "time": 1,
+                "timestart" : 1,
+                "timeend" : 0
+            }
+        },
+        "tokens": 1500
+    },
+    "4":{
+        "name":"Långbens detektivbyrå",
+        "ads":{
+            "ad1":{
+                "body":"Mysterier? Ring Långben",
+                "effect" : 0,
+                "time" : 2,
+                "timestart" : 1,
+                //"timeend" : 600
+            },
+            "ad2":{
+                "body":"Långben fixar biffen",
+                "effect": 0,
+                "time": 2,
+                "timestart" : 0,
+                //"timeend" : 1659
+            }
+        },
+        "tokens": 4000
+    },
+    "5":{
+        "name":"IoT's Reklambyrå",
+        "ads":{
+            "ad1":{
+                "body":"Synas här? IOT:s Reklambyrå",
+                "effect": 0,
+                "time": 0,
+                "timestart" : 0,
+                "timeend" : 0
+            }
+        },
+        "tokens": 1000
+    }
+}
+

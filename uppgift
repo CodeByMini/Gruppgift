@@ -1,0 +1,102 @@
+Vi äger en reklamskylt 
+vi har sålt in en massa reklam på dessa 
+problemet är att kunderna har olika typer av krav.
+Dessutom betalar dom olika mycket och det ska avspeglas 
+i hur mycket visning  dom får. 
+Tex ska en kund som betalat 10000 kr få ungefär 
+dubbelt så många visningar som en som betalar 5000 kr etc.
+
+Varje visning räcker 20 sekunder. 
+Sen slumpas nästa fram 
+- viktigt: ALDRIG SAMMA KUND TVÅ GÅNGER PÅ RAKEN
+
+
+
+Hederlige Harrys Bilar:
+
+Betalat 5000. Vill slumpmässigt visa en av tre meddelanden
+
+"Köp bil hos Harry"  
+(scroll)
+
+"En god bilaffär (för Harry!)" 
+text
+
+"Hederlige Harrys Bilar" 
+text (blinkande)
+
+
+Farmor Ankas Pajer AB:	
+
+Betalat 3000. Vill slumpmässigt visa en av två
+
+"Köp paj hos Farmor Anka"  
+(scroll)
+
+"Skynda innan Mårten ätit alla pajer" 
+text
+
+
+Svarte Petters Svartbyggen:	
+
+Betalat 1500. Vill visa
+
+"Låt Petter bygga åt dig"  
+(scroll) - på jämna minuter
+
+"Bygga svart? Ring Petter" 
+text - på ojämna minuter
+
+
+Långbens detektivbyrå:	
+
+Betalat 4000. Vill visa
+
+"Mysterier? Ring Långben"  
+text - endast på  kvällstid, dvs mellan 17:00-06:00
+
+"Långben fixar biffen" 
+text - endast på dagtid
+
+
+
+Ibland måste vi visa reklam för oss själva:
+Gör en snygg tex bitmap eller ngt och visa 
+motsvarande för 1000 kr. 
+Meddelande "Synas här? IOT:s Reklambyrå"
+
+----------------------------------------------------
+
+Vi ska lösa detta med det vi vet/kan idag. Dvs ganska STATISKT kommer det att bli...Men det är OK - vi kommer förbättra det och göra det mer datadrivet längre fram.
+Och OOP också.
+
+Att reflektera över: 
+
+https://devopedia.org/arduino
+
+Dessutom - vi spånar fram hur vi
+
+a) kan slumpa med olika sannolikhet
+b) kan börja äta denna elefant
+
+
+
+GOOGLA FRAM Scrollfunktioner etc
+https://www.arduino.cc/en/Tutorial/LibraryExamples/LiquidCrystalAutoscroll
+
+
+Ytterligare krav
+Problem att få betalt från Harry...så vi sänker hans till 1500
+
+Ny kund: Yrrol AB 6000kr
+
+"T-Röd - för dig som tänkt klart"
+"Claes Månsson - om flickan själv får välja"
+
+
+Gör något EXTRA för Yrrol. Ex LED-lampor runt om som blinkar. 
+Helst ska detta gå att kombinera med alla andra varianter - 
+dvs scroll + lampor, text + lampor
+
+
+
