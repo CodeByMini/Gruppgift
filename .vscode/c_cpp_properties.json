@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "/Users/danieljohansson/Library/Arduino15/packages/esp8266/tools/**",
+                "/Users/danieljohansson/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/**",
+                "/Applications/Arduino.app/Contents/Java/libraries/**",
+                "/Users/danieljohansson/Documents/Arduino/libraries/U8g2/src"
+            ],
+            "forcedInclude": [],
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
+            "intelliSenseMode": "clang-x64",
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

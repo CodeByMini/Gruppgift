@@ -96,11 +96,12 @@ int GetRelevantAd(int Event, int customer, int i)
         return 0;
       }
  }
-
+/*
 void GetMess(int customer, int adindex, char * printout)
 {
   strcpy(printout, loc[customer].ad[adindex].body);
 }
+*/
 
 int GetMessage(int customer, char * printout) {
   int numberOfAds = sizeof(loc[customer].ad) / sizeof(loc[customer].ad[0]);
@@ -132,26 +133,15 @@ int GetCustomer(int TotalTokens)
     int randTokens = random(1, TotalTokens);
     Serial.println(randTokens);
     if (randTokens > 0 && randTokens <= 5000)
-    {
-      customerToSend = 0;
-    }
-
+    {customerToSend = 0;}
     if (randTokens > 5000 && randTokens <= 8000)
-    {
-      customerToSend = 1;
-    }
+    {customerToSend = 1;}
     if (randTokens > 8000 && randTokens <= 9500)
-    {
-      customerToSend = 2;
-    }
+    {customerToSend = 2;}
     if (randTokens > 9500 && randTokens <= 13500)
-    {
-      customerToSend = 3;
-    }
+    {customerToSend = 3;}
     if (randTokens > 13500 && randTokens <= 14500)
-    {
-      customerToSend = 4;
-    }
+    {customerToSend = 4;}
 
   } while (lastCustomer == customerToSend);
   lastCustomer = customerToSend;
@@ -165,8 +155,8 @@ char GetChar(char * printout) {
       return ('\xe4');//ä
     } else if ((unsigned char)printout[prindex] == 165) {
       return ('\xe5');//å
-    } else if ((unsigned char)printout[prindex] == 195) {
-      return ('\xf6');
+    } else if ((unsigned char)printout[prindex] == 182) {
+      return ('\xf6');//ö
     }
   }
   else {
@@ -174,17 +164,14 @@ char GetChar(char * printout) {
   }
 }
 
-
 void setup() {
   Serial.begin(9600);
   u8g2.begin();
-  u8g2.setFont(u8g2_font_6x10_tf);  // set the target font to calculate the pixel width
+  u8g2.setFont(u8g2_font_6x10_tf);
   u8g2.setFontMode(0);
-
 
   //ADS BEGIN
   //Hederliga Harrys
-  //strcpy(c1.name, "Hederlige Harry");
   c1.tokens = 5000;
   strcpy(ad10.body, "Köp bil hos Harry");
   ad10.effect = 0;
@@ -201,7 +188,6 @@ void setup() {
   c1.ad[1] = ad11;
 
   //Farmor Ankas Pajer AB
-  //strcpy(c2.name, "Farmor Ankas Pajer AB");
   c2.tokens = 3000;
 
   strcpy(ad20.body, "Köp paj hos Farmor Anka");
@@ -219,7 +205,6 @@ void setup() {
   c2.ad[1] = ad21;
 
   //Svarte Petters Svartbyggen
-  //strcpy(c3.name, "Svarte Petters Svartbyggen");
   c3.tokens = 1500;
 
   strcpy(ad30.body, "Låt Petter bygga åt dig");
@@ -237,7 +222,6 @@ void setup() {
   c3.ad[1] = ad31;
 
   //Långbens detektivbyrå
-  //strcpy(c4.name, "Långbens detektivbyrå");
   c4.tokens = 4000;
 
   strcpy(ad40.body, "Mysterier? Ring Långben");
@@ -255,7 +239,6 @@ void setup() {
   c4.ad[1] = ad41;
 
   //IoT's Reklambyrå
-  //strcpy(c5.name, "IoT's Reklambyrå");
   c5.tokens = 1000;
 
   strcpy(ad50.body, "Synas här? IOT:s Reklambyrå");
@@ -264,7 +247,6 @@ void setup() {
   ad50.starttime = 0;
   ad50.endtime = 0;
   c5.ad[0] = ad50;
-
   //ADS END
 
   loc[0] = c1;
@@ -310,5 +292,4 @@ void loop() {
         } while ( u8g2.nextPage() );
       }
   }
-}
 }
