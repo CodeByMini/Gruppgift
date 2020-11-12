@@ -36,7 +36,6 @@ typedef struct {
   int effect;
   int times;
   int starttime;
-  //int endtime;
 } AD;
 
 typedef struct {
